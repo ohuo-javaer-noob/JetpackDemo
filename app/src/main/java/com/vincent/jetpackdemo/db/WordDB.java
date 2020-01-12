@@ -20,9 +20,10 @@ public abstract class WordDB extends RoomDatabase {
         //减少锁定的次数
         if (INSTANCE == null) {
             synchronized (WordDB.class) {
-                //预防线程先后初始化多次
+                //预防多线程先后初始化多次
                 if (INSTANCE == null) {
-                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(), WordDB.class, "word_db").build();
+                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(), WordDB.class, "word_db")
+                            .build();
                 }
             }
         }

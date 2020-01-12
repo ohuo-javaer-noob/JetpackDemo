@@ -1,15 +1,14 @@
 package com.vincent.jetpackdemo.viewmodel;
 
 import android.app.Application;
-import android.os.AsyncTask;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 
-import com.vincent.jetpackdemo.dao.WordDao;
-import com.vincent.jetpackdemo.db.WordDB;
 import com.vincent.jetpackdemo.entity.EntityWord;
 import com.vincent.jetpackdemo.repository.WordRepository;
 
@@ -42,4 +41,7 @@ public class WordViewModel extends AndroidViewModel {
     public void insertWords(EntityWord... words) {
         wordRepository.insertWords(words);
     }
+
+
+
 }

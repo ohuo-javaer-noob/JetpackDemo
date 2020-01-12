@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text="INSERT"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/card_swtich"
+            app:layout_constraintEnd_toStartOf="@+id/clear_btn"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -49,19 +49,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CLEAR"
-            app:layout_constraintBottom_toBottomOf="@+id/card_swtich"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/card_swtich"
-            app:layout_constraintTop_toTopOf="@+id/card_swtich" />
-
-        <Switch
-            android:id="@+id/card_swtich"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CardSwitch"
             app:layout_constraintBottom_toBottomOf="@+id/insert_btn"
-            app:layout_constraintEnd_toStartOf="@+id/clear_btn"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/insert_btn"
             app:layout_constraintTop_toTopOf="@+id/insert_btn" />

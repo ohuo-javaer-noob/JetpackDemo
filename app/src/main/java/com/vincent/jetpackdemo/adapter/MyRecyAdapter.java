@@ -28,7 +28,6 @@ public class MyRecyAdapter extends RecyclerView.Adapter<MyRecyAdapter.MyViewHold
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-
         CellNormalBinding binding = DataBindingUtil.inflate(inflater, R.layout.cell_normal, parent, false);
         return new MyViewHolder(binding.getRoot(), binding);
     }

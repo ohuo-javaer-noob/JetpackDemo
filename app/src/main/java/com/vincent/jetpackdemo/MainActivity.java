@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         bindView();
 
         bindData();
@@ -42,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void bindView() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        binding.setLifecycleOwner(this);
         adapter = new MyRecyAdapter();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         binding.recyclerView.setLayoutManager(linearLayoutManager);
